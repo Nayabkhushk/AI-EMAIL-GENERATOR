@@ -142,9 +142,7 @@ Subject: [subject]
                     {
                         "role": "system",
                         "content": (
-                            "You are an expert professional email writer.
-
-Generate a high-quality email based on the following information.
+                            """You are an expert professional email writer. Generate a high-quality email based on the following information.
 
 Email Type:
 Job Application
@@ -172,7 +170,7 @@ Requirements:
 4. Keep the language natural.
 5. Avoid unnecessary filler.
 6. Do not use placeholders unless required.
-7. Return the subject and email body clearly."
+7. Return the subject and email body clearly."""
                         )
                     },
                     {
