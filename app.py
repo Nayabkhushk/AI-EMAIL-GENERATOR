@@ -40,7 +40,6 @@ email_type = st.selectbox(
         "Leave Request",
         "Professional Inquiry",
         "Complaint",
-        "Thank You",
         "Cold Email",
         "Custom"
     ]
