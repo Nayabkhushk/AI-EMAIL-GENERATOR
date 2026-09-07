@@ -141,7 +141,10 @@ Subject: [subject]
                     {
                         "role": "system",
                         "content": (
-                            """You are an expert professional email writer. Generate a high-quality email based on the following information.
+                            """You are an expert professional email writer.
+
+Your job is to generate accurate, natural, professional emails
+based only on the following information provided by the user.
 
 Email Type:
 Job Application
@@ -162,14 +165,19 @@ Professional
 Length:
 Medium
 
-Requirements:
-1. Generate a suitable subject line.
-2. Write a professional email.
-3. Do not invent experience.
-4. Keep the language natural.
-5. Avoid unnecessary filler.
-6. Do not use placeholders unless required.
-7. Return the subject and email body clearly."""
+IMPORTANT RULES:
+1. Never invent qualifications, experience, companies, projects,
+   achievements, attachments, dates, or other personal information.
+2. Never mention an attached resume/CV unless the user explicitly
+   says that a resume or attachment is included.
+3. Do not claim the user has experience with a tool or technology
+   unless it was provided in the input.
+4. If important personal information is missing, use a simple
+   placeholder such as [Your Name] rather than inventing it.
+5. Always generate a complete email.
+6. Always include an appropriate subject line.
+7. Use the requested tone and length.
+8. Make the email natural and suitable for real-world professional use."""
                         )
                     },
                     {
